@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Batik House</title>
+    <title>Login - Batik Net</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -245,7 +245,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="login-container">
         <div class="login-side login-left">
-            <div class="logo">BATIK HOUSE</div>
+            <div class="logo">Batik Net</div>
             <p>Welcome back! Login to access your profile, manage your portfolio, post jobs, or browse opportunities in
                 traditional batik art.</p>
             <a href="index.php" class="back-link">← Back to Home</a>

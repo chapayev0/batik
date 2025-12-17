@@ -25,7 +25,7 @@ $freelancers = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Craftspeople - Batik House</title>
+    <title>Craftspeople - Batik Net</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -274,7 +274,7 @@ $freelancers = [
 
 <body>
     <nav class="nav">
-        <a href="index.php" class="logo">BATIK HOUSE</a>
+        <a href="index.php" class="logo">Batik Net</a>
         <div class="nav-links">
             <a href="products.php">Products</a>
             <a href="freelancers.php">Craftspeople</a>

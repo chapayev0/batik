@@ -1,4 +1,4 @@
-# Batik House - Traditional Crafting Platform
+# Batik Net - Traditional Crafting Platform
 
 A fully functional minimalistic and modern dummy website for traditional batik crafting, featuring separate portals for batik artisans and workshop owners.
 

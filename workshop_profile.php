@@ -442,7 +442,7 @@ $products = [
 
 <body>
     <nav class="nav">
-        <a href="index.php" class="logo">BATIK HOUSE</a>
+        <a href="index.php" class="logo">Batik Net</a>
         <div class="nav-links">
             <a href="products.php">Products</a>
             <a href="freelancers.php">Craftspeople</a>

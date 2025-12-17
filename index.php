@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batik House - Authentic Sri Lankan Batik Art</title>
+    <title>Batik Net - Authentic Sri Lankan Batik Art</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -288,7 +288,9 @@ session_start();
 
 <body>
     <nav class="nav">
-        <a href="index.php" class="logo">BATIK HOUSE</a>
+        <a href="index.php" class="logo">
+            <img src="icons/logo.png" alt="Batik Net Logo" style="height: 50px;">
+        </a>
         <div class="nav-links">
             <a href="products.php">Products</a>
             <a href="freelancers.php">Craftspeople</a>
@@ -312,8 +314,7 @@ session_start();
                 </div>
             </div>
             <div class="hero-image">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 500'%3E%3Crect fill='%238b7355' width='600' height='500'/%3E%3Cpath fill='%23d4a574' opacity='0.3' d='M300,250 L450,150 L450,350 Z'/%3E%3Cpath fill='%232c2416' opacity='0.2' d='M150,150 L300,250 L150,350 Z'/%3E%3Ccircle cx='100' cy='100' r='50' fill='%23f8f6f3' opacity='0.1'/%3E%3C/svg%3E"
-                    alt="Batik Art">
+                <img src="icons/wall.jpg" alt="Batik Net Hero">
             </div>
         </div>
     </section>
@@ -344,9 +345,9 @@ session_start();
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="logo" style="color: var(--white); margin-bottom: 1rem;">BATIK HOUSE</div>
+            <div class="logo" style="color: var(--white); margin-bottom: 1rem;">Batik Net</div>
             <p style="opacity: 0.8;">Preserving the art of wax-resist dyeing for future generations</p>
-            <p style="margin-top: 2rem; opacity: 0.6;">© 2024 Batik House. All rights reserved.</p>
+            <p style="margin-top: 2rem; opacity: 0.6;">© 2024 Batik Net. All rights reserved.</p>
         </div>
     </footer>
 </body>

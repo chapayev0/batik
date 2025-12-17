@@ -1,6 +1,6 @@
 {
-  "name": "Batik House",
-  "short_name": "Batik",
+  "name": "Batik Net",
+  "short_name": "Batik Net",
   "start_url": "./index.php",
   "display": "standalone",
   "background_color": "#f8f6f3",

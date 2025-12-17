@@ -3,5 +3,5 @@
     <rect width="512" height="512" fill="#2c2416"/>
     <circle cx="256" cy="256" r="200" fill="#8b7355" opacity="0.8"/>
     <path d="M256 100 L350 250 L256 400 L162 250 Z" fill="#d4a574" opacity="0.9"/>
-    <text x="50%" y="450" font-family="serif" font-size="60" fill="#f8f6f3" text-anchor="middle" letter-spacing="4">BATIK HOUSE</text>
+    <text x="50%" y="450" font-family="serif" font-size="60" fill="#f8f6f3" text-anchor="middle" letter-spacing="4">Batik Net</text>
 </svg>
