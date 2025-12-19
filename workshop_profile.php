@@ -438,11 +438,16 @@ $products = [
             }
         }
     </style>
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/nav.js" defer></script>
 </head>
 
 <body>
     <nav class="nav">
         <a href="index.php" class="logo">Batik Net</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
         <div class="nav-links">
             <a href="products.php">Products</a>
             <a href="freelancers.php">Craftspeople</a>

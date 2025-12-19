@@ -1,5 +1,11 @@
 <?php
 session_start();
+// Show the loading page once per session before serving the main page
+if (!isset($_SESSION['loader_shown'])) {
+    $_SESSION['loader_shown'] = 1;
+    header('Location: loading.html');
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -284,6 +290,8 @@ session_start();
             }
         }
     </style>
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/nav.js" defer></script>
 </head>
 
 <body>
@@ -291,6 +299,9 @@ session_start();
         <a href="index.php" class="logo">
             <img src="icons/logo.png" alt="Batik Net Logo" style="height: 50px;">
         </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
         <div class="nav-links">
             <a href="products.php">Products</a>
             <a href="freelancers.php">Craftspeople</a>
