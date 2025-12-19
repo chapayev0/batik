@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Registration Success</title>
+  <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body>
+  <main class="reg-wrap">
+    <h1>Registration Successful</h1>
+    <div id="preview" class="preview"></div>
+    <div class="actions">
+      <a href="index.php" class="btn">Home</a>
+      <a id="new-reg" class="btn btn-link">New Registration</a>
+    </div>
+  </main>
+  <script>
+    // Read type from URL (freelancer or company) and display stored data
+    function qs(name){
+      const url = new URL(location.href);
+      return url.searchParams.get(name);
+    }
+    const type = qs('type') || 'freelancer';
+    const key = type === 'company' ? 'company_profile' : 'freelancer_profile';
+    const raw = localStorage.getItem(key);
+    const preview = document.getElementById('preview');
+    if (!raw){
+      preview.innerHTML = '<p>No saved registration found. Try registering first.</p>';
+    } else {
+      const data = JSON.parse(raw);
+      let html = '<dl>';
+      for (const k in data){
+        html += `<dt>${k.replace(/_/g,' ')}:</dt><dd>${(data[k]||'')}</dd>`;
+      }
+      html += '</dl>';
+      preview.innerHTML = html;
+    }
+    document.getElementById('new-reg').href = type === 'company' ? 'company_register.php' : 'freelancer_register.php';
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.nav{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);padding:1.5rem 5%;display:flex;justify-content:space-between;align-items:center;z-index:1000;border-bottom:1px solid rgba(44,36,22,0.1)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:#2c2416;letter-spacing:2px;text-decoration:none}
+.nav-links{display:flex;gap:2.5rem;align-items:center}
+.nav-links a,.nav-links button{background:transparent;border:none;color:#2c2416;font-weight:500;font-size:0.9rem;letter-spacing:0.5px;cursor:pointer;text-decoration:none}
+.nav-links a:hover,.nav-links button:hover{color:#d4a574}
+.btn{padding:0.75rem 1rem;border:2px solid #2c2416;background:transparent;color:#2c2416;font-weight:600;transition:all 0.3s;border-radius:6px}
+.btn:hover{background:#2c2416;color:#fff}
+.btn-primary{background:#2c2416;color:#fff}
+.btn-link{background:transparent;color:#2c2416;border:1px solid rgba(44,36,22,0.08)}
+
+/* Modal styles */
+.reg-modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:1100}
+.reg-modal.open{display:flex}
+.reg-backdrop{position:absolute;inset:0;background:rgba(0,0,0,0.4)}
+.reg-dialog{position:relative;background:#fff;padding:20px;border-radius:8px;max-width:360px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,0.2);z-index:2;text-align:center}
+.reg-options{display:flex;gap:12px;justify-content:center;margin-top:16px}
+.reg-close{position:absolute;top:8px;right:8px;border:none;background:transparent;font-size:22px;cursor:pointer}
+
+/* small helper to offset content when nav fixed */
+.page-offset{padding-top:96px}

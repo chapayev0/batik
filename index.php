@@ -114,6 +114,14 @@ if (!isset($_SESSION['loader_shown'])) {
             border-color: var(--secondary);
         }
 
+        /* Registration modal styles */
+        .reg-modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:1100}
+        .reg-modal.open{display:flex}
+        .reg-backdrop{position:absolute;inset:0;background:rgba(0,0,0,0.4)}
+        .reg-dialog{position:relative;background:#fff;padding:20px;border-radius:8px;max-width:360px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,0.2);z-index:2;text-align:center}
+        .reg-options{display:flex;gap:12px;justify-content:center;margin-top:16px}
+        .reg-close{position:absolute;top:8px;right:8px;border:none;background:transparent;font-size:22px;cursor:pointer}
+
         .hero {
             min-height: 100vh;
             display: flex;
@@ -306,12 +314,28 @@ if (!isset($_SESSION['loader_shown'])) {
             <a href="products.php">Products</a>
             <a href="freelancers.php">Craftspeople</a>
             <a href="workshops.php">Workshops</a>
+                        <?php if (!isset($_SESSION['logged_in'])): ?>
+                        <button id="register-btn" class="btn">Register</button>
+                        <?php endif; ?>
             <a href="<?php echo isset($_SESSION['logged_in']) ? ($_SESSION['user_type'] === 'freelancer' ? 'freelancer_profile.php' : 'workshop_profile.php') : 'login.php'; ?>"
                 class="btn">
                 <?php echo isset($_SESSION['logged_in']) ? 'Profile' : 'Login'; ?>
             </a>
         </div>
     </nav>
+
+        <!-- Registration modal -->
+        <div id="reg-modal" class="reg-modal" aria-hidden="true">
+            <div class="reg-backdrop" data-close="true"></div>
+            <div class="reg-dialog" role="dialog" aria-modal="true" aria-labelledby="reg-title">
+                <button class="reg-close" aria-label="Close">&times;</button>
+                <h3 id="reg-title">Register as</h3>
+                <div class="reg-options">
+                    <button id="reg-freelancer" class="btn btn-primary">Freelancer</button>
+                    <button id="reg-company" class="btn btn-link">Company</button>
+                </div>
+            </div>
+        </div>
 
     <section class="hero">
         <div class="hero-content">
