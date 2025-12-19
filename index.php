@@ -346,6 +346,7 @@ if (!isset($_SESSION['loader_shown'])) {
                 <div class="hero-actions">
                     <a href="products.php" class="btn btn-primary">Browse Patterns</a>
                     <a href="freelancers.php" class="btn">Meet Artists</a>
+                    <button id="install-app" class="btn btn-primary" style="display:none;">Install App</button>
                 </div>
             </div>
             <div class="hero-image">
